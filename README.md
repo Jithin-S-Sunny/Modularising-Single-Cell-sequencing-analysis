@@ -18,3 +18,7 @@ The expression levels of 1430 transcription factors (TFs) were evaluated. Percen
 
 ## Gene enrichment analysis
 Gene enrichment analysis further revealed 119 GO molecular functions. The top 10 functions and the corresponding genes are in Fig 3. 
+
+## 
+After filtering the 1430 TFs for expressed genes, MCODE was used to evaluate the most closely linked TFs. This clustering-based method to separate the dense regions, uses vertex weighting by local neighbourhood density and outward traversal from a locally dense seed protein.
+
