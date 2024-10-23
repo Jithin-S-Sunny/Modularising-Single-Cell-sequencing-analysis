@@ -1,4 +1,7 @@
 # Single-cell data analysis
+Single-cell expression studies have allowed us to measure RNA levels of individual cells of highly heterogeneous cellular population. The challenge to construct and infer the networks remains largely unsolved.
+
+Each cell defined by a state 
 
 # Data
 This single-cell study corresponds to Peripheral Blood Mononuclear Cell (PBMC) single-cell RNA-seq (scRNA-seq) data from the manuscript. In particular, this study contains data from 6 scRNA-seq methods (Smart-seq2, CEL-Seq2, 10x Chromium, Drop-seq, Seq-Well, and inDrops). Each method was applied to two replicates (PBMC1 and PBMC2).
