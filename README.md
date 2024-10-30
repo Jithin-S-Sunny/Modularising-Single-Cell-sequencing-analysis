@@ -1,4 +1,4 @@
-# Modularising Single-Cell sequencing analysis-2024
+# Modularising Single-Cell sequencing analysis
 Only one layer of the intricate regulatory system that controls signaling and cellular function is captured by scRNA-seq. Better results have been made possible by significant efforts to quantify additional modalities at single-cell resolution, such as chromatin accessibility, surface proteins, T cell receptor (TCR)/B cell receptor (BCR) repertoires, and spatial location. These features will keep expanding and with it the tools to analyze it. With over 1000 tools currently available for analyzing the single-cell sequencing results, it becomes crucial to filter the best results that could support the hypothesis at hand. There are several steps to the analysis of scRNA-seq data: 
 * Pre-processing
 * Quality control & Filtering
@@ -7,15 +7,22 @@ Only one layer of the intricate regulatory system that controls signaling and ce
 * Cell-type annotation
 * Differential gene expression analysis
 * Trajectory inference
-* Gene set enrichment analysis, amongst other.        
+* Gene set enrichment analysis, amongst others.
 
+There can be 2 major challenges for bioinformatics analysis        
+
+Firstly, there can be timely changes
+  * to the version of the tools being used, the analysis environment could  
+  * new tools could be added,
+  * the method used for one step could need a more thorouput look, for example, feature reduction may have to be modified to include more useful feaures which would otherwise be discared
+  * Multiple datasets could be integrated  
 
 
 ## Nextflow 
 
 
 
-
+The second challenge 
 
 ## Structure Equation Modelling
 
