@@ -1,9 +1,5 @@
-# Cellular Subtypes
+# Modularising Single-Cell sequencing analysis
 
-https://www.sciencedirect.com/science/article/pii/S1535610822002136?via%3Dihub 
-A negative correlation between the abundance of these antigen-presenting CAFs (apCAFs) and the ratio of effector CD8+ T cells and regulatory T cells (Tregs) was observed in human PDAC, which supported a potential immunosuppressive function of apCAFs.
-
-https://www.sciencedirect.com/topics/neuroscience/structural-equation-modeling#:~:text=Structural%20Equation%20Modeling%20(SEM)%20is,indicating%20the%20strength%20of%20relationships.
 
 
 
