@@ -14,12 +14,13 @@ There can be 2 major challenges for bioinformatics analysis
 Firstly, there can be timely changes
   * to the version of the tools being used or the environment (modules, libraries) changing over time.   
   * new tools could be added,
-  * the method used for one step could need a more thorouput look, for example, feature reduction may have to be modified to include more useful feaures which would otherwise be discared,
+  * the method used for one step could need a more thorough look, for example, feature reduction may have to be modified to include more useful feaures which would otherwise be discared,
   * multiple datasets could be integrated over time. This can cause batch effects, requiring more robust correction methods.  
 
 
 ## Nextflow 
-This 
+For straightforward, small-scale operations, shell scripts could be adequate, but Nextflow offers a strong framework for managing intricate processes with improved scalability, reproducibility, error handling, modularity, and portability. Because of these benefits, it is the best option for bioinformatics processes and extensive data processing in a variety of computing settings.
+
 
 
 The second challenge lies within the interdependency of various data analysis tools. The hidden effects of 
