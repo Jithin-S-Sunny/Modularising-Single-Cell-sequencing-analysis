@@ -1,5 +1,8 @@
-# Modularising Single-Cell sequencing analysis
+# Modularising Single-Cell sequencing analysis-2024
 
+## Nextflow 
+
+## Structure Equation Modelling
 
 
 
