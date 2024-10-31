@@ -19,7 +19,7 @@ Firstly, there can be timely changes
 
 
 ## Nextflow 
-For straightforward, small-scale operations, shell scripts could be adequate, but Nextflow offers a strong framework for managing intricate processes with improved scalability, reproducibility, error handling, modularity, and portability. Because of these benefits, it is the best option for bioinformatics processes and extensive data processing in a variety of computing settings.
+For straightforward, small-scale operations, shell scripts could be adequate, but Nextflow offers a strong framework for managing intricate processes with improved scalability, reproducibility, error handling, modularity, and portability. Because of these benefits, it is the best option for bioinformatics processes and extensive data processing in a variety of computing settings. 
 
 
 
