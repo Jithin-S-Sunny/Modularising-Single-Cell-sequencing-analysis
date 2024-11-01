@@ -24,10 +24,34 @@ For straightforward, small-scale operations, shell scripts could be adequate, bu
 The second challenge lies within the interdependency of various data analysis tools. The hidden effects of 
 
 
-## Structure Equation Modelling
-Can bring forth 
+## Structure Equation Modelling (SEM)
+Can bring forth the relationship between diverse outputs. Numerous observable variables (including gene expression levels, cell-type assignments, cluster identities, etc.) are present in scRNA-seq; however, these can frequently be impacted by biological processes that are not directly quantified, known as latent factors.
+Latent variable examples could include:
+1. Cell State: An obscure cell state that affects gene expression, such as differentiation status.
+2. Unobserved factors that cause variance between samples or batches are known as batch effects.
 
+Some types of analysis of the scRNA-seq dataset include clustering, differential expression, pathway enrichment, pseudotime analysis, cell-cell communication, etc.
+One can establish causal links between these analyses with SEM. For example, latent factors such as cell differentiation stage may have an impact on pathway enrichment scores, pseudotime trajectories, and clustering outcomes.
 
+Let's take an example of 5 independent analysis:
+Cell Clustering (Analysis A)
+Differential Gene Expression (Analysis B)
+Pseudotime Ordering (Analysis C)
+Pathway Enrichment (Analysis D)
+Cell-Cell Communication (Analysis E)
+
+1. Define latent (cell differentiation state, batch effects) & observed variables (gene expression, cell clustering, pseudo-time ordering, pathway enrichment scores, etc.)
+2. Specify model relationships
+   a. Latent Variable Relationships:
+      Cell Differentiation State -> Analysis A: Cell differentiation status affects which cluster the cell belongs to. This can be modeled as a latent variable impacting the observed cluster labels.
+      Batch Effects -> Analysis B: Batch effects influence the gene expression profiles across cells, contributing to unwanted variation.
+   b. Observed Variable Relationships:
+      Analysis A -> Analysis C: The cell clusters determine the pseudotime trajectories, as cells belonging to similar clusters are likely to follow the same differentiation path.
+      Analysis C -> Analysis D: The pseudo-time ordering influences pathway activity, indicating which pathways are active during different differentiation stages.
+      Analysis C -> Analysis E: Communication: Cells at different points along the differentiation trajectory will have different cell signaling properties.
+   c. Create measurement equations (ME): 
+      In SEM, ME describes how latent variables relate to their observed indicators. Expression levels of specific genes that are known to indicate stages of cell differentiation.
+      QC Metrics: Metrics such as sequencing depth or mitochondrial gene proportion, might indicate batch effects.    
 
 
 
