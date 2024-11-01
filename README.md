@@ -34,14 +34,14 @@ Some types of analysis of the scRNA-seq dataset include clustering, differential
 One can establish causal links between these analyses with SEM. For example, latent factors such as cell differentiation stage may have an impact on pathway enrichment scores, pseudotime trajectories, and clustering outcomes.
 
 Let's take an example of 5 independent analysis:
-Cell Clustering (Analysis A)
-Differential Gene Expression (Analysis B)
-Pseudotime Ordering (Analysis C)
-Pathway Enrichment (Analysis D)
-Cell-Cell Communication (Analysis E)
+1. Cell Clustering (Analysis A)
+2. Differential Gene Expression (Analysis B)
+3. Pseudotime Ordering (Analysis C)
+4. Pathway Enrichment (Analysis D)
+5. Cell-Cell Communication (Analysis E)
 
-1. Define latent (cell differentiation state, batch effects) & observed variables (gene expression, cell clustering, pseudo-time ordering, pathway enrichment scores, etc.)
-2. Specify model relationships
+A) Define latent (cell differentiation state, batch effects) & observed variables (gene expression, cell clustering, pseudo-time ordering, pathway enrichment scores, etc.)
+B) Specify model relationships
    a. Latent Variable Relationships:
       Cell Differentiation State -> Analysis A: Cell differentiation status affects which cluster the cell belongs to. This can be modeled as a latent variable impacting the observed cluster labels.
       Batch Effects -> Analysis B: Batch effects influence the gene expression profiles across cells, contributing to unwanted variation.
