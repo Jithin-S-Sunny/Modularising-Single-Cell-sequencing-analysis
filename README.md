@@ -51,7 +51,9 @@ Cell-Cell Communication (Analysis E)
       Analysis C -> Analysis E: Communication: Cells at different points along the differentiation trajectory will have different cell signaling properties.
    c. Create measurement equations (ME): 
       In SEM, ME describes how latent variables relate to their observed indicators. Expression levels of specific genes that are known to indicate stages of cell differentiation.
-      QC Metrics: Metrics such as sequencing depth or mitochondrial gene proportion, might indicate batch effects.    
+      QC Metrics: Metrics such as sequencing depth or mitochondrial gene proportion, might indicate batch effects.
+
+   Observed variable = loading coefficient * latent variable + measurement error
 
 
 
