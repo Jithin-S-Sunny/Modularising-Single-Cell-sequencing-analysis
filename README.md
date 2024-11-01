@@ -12,21 +12,20 @@ The scope of single-cell sequencing just keeps getting bigger. Only one layer of
 There can be 2 major challenges for bioinformatics analysis        
 
 Firstly, there can be timely changes
-  * to the version of the tools being used or the environment (modules, libraries) changing over time.   
-  * new tools could be added,
-  * the method used for one step could need a more thorough look, for example, feature reduction may have to be modified to include more useful feaures which would otherwise be discared,
+  * to the version of the tools being used or the environment (modules, libraries) changing over time. The same pipeline should run successfully in a local computer, terminal, HPC, or maybe even mainframes.   
+  * new tools could be added. Timely addition of new bioinformatics analysis is common and the pipeline should be modular to accommodate it. 
+  * the method used for one step could need a more thorough look, for example, feature reduction may have to be modified to include more useful features that would otherwise be discarded,
   * multiple datasets could be integrated over time. This can cause batch effects, requiring more robust correction methods.  
 
 
 ## Nextflow 
-For straightforward, small-scale operations, shell scripts could be adequate, but Nextflow offers a strong framework for managing intricate processes with improved scalability, reproducibility, error handling, modularity, and portability. Because of these benefits, it is the best option for bioinformatics processes and extensive data processing in a variety of computing settings. 
-
-
+For straightforward, small-scale operations, shell scripts could be adequate, but Nextflow offers a strong framework for managing intricate processes with improved scalability, reproducibility, error handling, modularity, and portability. Because of these benefits, it is the best option for bioinformatics pipelines employing extensive data processing in a variety of computing settings. 
 
 The second challenge lies within the interdependency of various data analysis tools. The hidden effects of 
 
-## Structure Equation Modelling
 
+## Structure Equation Modelling
+Can bring forth 
 
 
 
