@@ -54,7 +54,9 @@ Steps:
       In SEM, ME describes how latent variables relate to their observed indicators. Expression levels of specific genes that are known to indicate stages of cell differentiation.
       QC Metrics: Metrics such as sequencing depth or mitochondrial gene proportion, might indicate batch effects.
 
-   Observed variable = loading coefficient * latent variable + measurement error
+                                                            Yi=λi * Latent Variable+ϵi
+                                                                      or​
+                             Observed variable = loading coefficient * latent variable + measurement error
 
 
 
