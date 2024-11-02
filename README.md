@@ -61,22 +61,6 @@ Steps:
 4. Specify the model in the software (ex:lavaan in R)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Single-cell data analysis Date: April 2022
 Single-cell expression studies have allowed us to measure RNA levels of individual cells of highly heterogeneous cellular population. The challenge to construct and infer the networks remains largely unsolved.
 
