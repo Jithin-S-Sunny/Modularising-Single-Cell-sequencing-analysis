@@ -40,8 +40,9 @@ Let's take an example of 5 independent analysis:
 4. Pathway Enrichment (Analysis D)
 5. Cell-Cell Communication (Analysis E)
 
-A) Define latent (cell differentiation state, batch effects) & observed variables (gene expression, cell clustering, pseudo-time ordering, pathway enrichment scores, etc.)
-B) Specify model relationships
+Steps:
+1. Define latent (cell differentiation state, batch effects) & observed variables (gene expression, cell clustering, pseudo-time ordering, pathway enrichment scores, etc.)
+2. Specify model relationships
    a. Latent Variable Relationships:
       Cell Differentiation State -> Analysis A: Cell differentiation status affects which cluster the cell belongs to. This can be modeled as a latent variable impacting the observed cluster labels.
       Batch Effects -> Analysis B: Batch effects influence the gene expression profiles across cells, contributing to unwanted variation.
@@ -49,7 +50,7 @@ B) Specify model relationships
       Analysis A -> Analysis C: The cell clusters determine the pseudotime trajectories, as cells belonging to similar clusters are likely to follow the same differentiation path.
       Analysis C -> Analysis D: The pseudo-time ordering influences pathway activity, indicating which pathways are active during different differentiation stages.
       Analysis C -> Analysis E: Communication: Cells at different points along the differentiation trajectory will have different cell signaling properties.
-   c. Create measurement equations (ME): 
+3. Create measurement equations (ME): 
       In SEM, ME describes how latent variables relate to their observed indicators. Expression levels of specific genes that are known to indicate stages of cell differentiation.
       QC Metrics: Metrics such as sequencing depth or mitochondrial gene proportion, might indicate batch effects.
 
