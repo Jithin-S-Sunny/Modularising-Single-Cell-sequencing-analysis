@@ -1,5 +1,5 @@
 # Modularising Single-Cell sequencing analysis
-The scope of single-cell sequencing just keeps getting bigger. Only one layer of the intricate regulatory system that controls signaling and cellular function is captured by scRNA-seq. Better results have been made possible by significant efforts to quantify additional modalities at single-cell resolution, such as chromatin accessibility, surface proteins, T cell receptor (TCR)/B cell receptor (BCR) repertoires, and spatial location. These features will keep expanding and with it the tools to analyze it. With over 1000 tools currently available for analyzing the single-cell sequencing results, it becomes crucial to filter the best results that could support the hypothesis at hand. There are several steps to the analysis of scRNA-seq data: 
+The scope of single-cell sequencing just keeps getting bigger. Only one layer of the intricate regulatory system that controls signaling and cellular function is captured by scRNA-seq. But better results have been made possible by significant efforts to quantify additional modalities at single-cell resolution, such as chromatin accessibility, surface proteins, T cell receptor (TCR)/B cell receptor (BCR) repertoires, and spatial location. These features will keep expanding and with it the tools to analyze it. With over 1000 tools currently available for analyzing the single-cell sequencing results, it becomes crucial to filter the best results that could support the hypothesis at hand. There are several steps to the analysis of scRNA-seq data: 
 * Pre-processing
 * Quality control & Filtering
 * Dimensionality reduction
@@ -17,12 +17,12 @@ Firstly, there can be timely changes
   * the method used for one step could need a more thorough look, for example, feature reduction may have to be modified to include more useful features that would otherwise be discarded,
   * multiple datasets could be integrated over time. This can cause batch effects, requiring more robust correction methods.  
 
+I propose a 2 step approach:
 
 ## Nextflow 
 For straightforward, small-scale operations, shell scripts could be adequate, but Nextflow offers a strong framework for managing intricate processes with improved scalability, reproducibility, error handling, modularity, and portability. Because of these benefits, it is the best option for bioinformatics pipelines employing extensive data processing in a variety of computing settings. 
 
-The second challenge lies within the interdependency of various data analysis tools. The hidden effects of 
-
+### The second challenge lies within the interdependency of various data analysis tools. The hidden effects of observable factors can be quantified to some extent by:
 
 ## Structure Equation Modelling (SEM)
 Can bring forth the relationship between diverse outputs. Numerous observable variables (including gene expression levels, cell-type assignments, cluster identities, etc.) are present in scRNA-seq; however, these can frequently be impacted by biological processes that are not directly quantified, known as latent factors.
@@ -57,6 +57,8 @@ Steps:
                                                             Yi=λi * Latent Variable+ϵi
                                                                       or​
                              Observed variable = loading coefficient * latent variable + measurement error
+
+4. Specify the model in the software (ex:lavaan in R)
 
 
 
