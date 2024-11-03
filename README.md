@@ -28,8 +28,14 @@ graph TD;
     A --> C[Module 2: Quality Control];
     B --> D[Process: Data Cleanup];
     C --> D;
-
-
+```
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
 ### The second challenge lies within the interdependency of various data analysis tools. The hidden effects of observable factors can be quantified to some extent by:
 
 ## Structure Equation Modelling (SEM)
