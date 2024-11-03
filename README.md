@@ -22,6 +22,8 @@ I propose a 2 step approach:
 ## Nextflow 
 For straightforward, small-scale operations, shell scripts could be adequate, but Nextflow offers a strong framework for managing intricate processes with improved scalability, reproducibility, error handling, modularity, and portability. Because of these benefits, it is the best option for bioinformatics pipelines employing extensive data processing in a variety of computing settings. 
 
+
+
 ### The second challenge lies within the interdependency of various data analysis tools. The hidden effects of observable factors can be quantified to some extent by:
 
 ## Structure Equation Modelling (SEM)
@@ -60,6 +62,10 @@ Steps:
 
 4. Specify the model in the software (ex:lavaan in R)
 
+
+References:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC10066026/
+https://www.sciencedirect.com/science/article/abs/pii/B0080430767007762 
 
 # Single-cell data analysis Date: April 2022
 Single-cell expression studies have allowed us to measure RNA levels of individual cells of highly heterogeneous cellular population. The challenge to construct and infer the networks remains largely unsolved.
