@@ -23,12 +23,33 @@ I propose a 2 step approach:
 For straightforward, small-scale operations, shell scripts could be adequate, but Nextflow offers a strong framework for managing intricate processes with improved scalability, reproducibility, error handling, modularity, and portability. Because of these benefits, it is the best option for bioinformatics pipelines employing extensive data processing in a variety of computing settings. 
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+flowchart TD
+    subgraph Pipeline
+        A[Main Script] --> B[Module 1]
+        A --> C[Module 2]
+        A --> D[Module 3]
+    end
+
+    subgraph Module1
+        B --> B1[Process 1]
+        B --> B2[Process 2]
+    end
+
+    subgraph Module2
+        C --> C1[Process 3]
+        C --> C2[Process 4]
+    end
+
+    subgraph Module3
+        D --> D1[Process 5]
+    end
+
+    subgraph Results
+        B2 --> R1[Intermediate Output]
+        C2 --> R2[Final Output]
+        D1 --> R2
+    end
+
 
 ### The second challenge lies within the interdependency of various data analysis tools. The hidden effects of observable factors can be quantified to some extent by:
 
