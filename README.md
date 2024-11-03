@@ -30,12 +30,24 @@ graph TD;
     C --> D;
 ```
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+flowchart TD
+    A[Main Script] --> B[Module 1: Data Preprocessing]
+    A --> C[Module 2: Quality Control]
+    A --> D[Module 3: Analysis]
+
+    B --> B1[Process 1: Data Download]
+    B --> B2[Process 2: Data Cleanup]
+
+    C --> C1[Process 3: QC Metrics Calculation]
+    C --> C2[Process 4: Filtering]
+
+    D --> D1[Process 5: Data Analysis]
+    D --> D2[Process 6: Generate Report]
+
+    B2 --> C1
+    C2 --> D1
 ```
+
 ### The second challenge lies within the interdependency of various data analysis tools. The hidden effects of observable factors can be quantified to some extent by:
 
 ## Structure Equation Modelling (SEM)
