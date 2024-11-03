@@ -23,13 +23,6 @@ I propose a 2 step approach:
 For straightforward, small-scale operations, shell scripts could be adequate, but Nextflow offers a strong framework for managing intricate processes with improved scalability, reproducibility, error handling, modularity, and portability. Because of these benefits, it is the best option for bioinformatics pipelines employing extensive data processing in a variety of computing settings. 
 
 ```mermaid
-graph TD;
-    A[Main Script] --> B[Module 1: Data Preprocessing];
-    A --> C[Module 2: Quality Control];
-    B --> D[Process: Data Cleanup];
-    C --> D;
-```
-```mermaid
 flowchart TD
     A[Main Script] --> B[Module 1: Data Preprocessing]
     A --> C[Module 2: Quality Control]
