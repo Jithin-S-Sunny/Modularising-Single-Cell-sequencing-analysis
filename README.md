@@ -24,31 +24,22 @@ For straightforward, small-scale operations, shell scripts could be adequate, bu
 
 ```mermaid
 flowchart TD
-    subgraph Pipeline
-        A[Main Script] --> B[Module 1]
-        A --> C[Module 2]
-        A --> D[Module 3]
-    end
+    A[Main Script] --> B[Module 1: Data Preprocessing]
+    A --> C[Module 2: Quality Control]
+    A --> D[Module 3: Analysis]
 
-    subgraph Module1
-        B --> B1[Process 1]
-        B --> B2[Process 2]
-    end
+    B --> B1[Process 1: Data Download]
+    B --> B2[Process 2: Data Cleanup]
 
-    subgraph Module2
-        C --> C1[Process 3]
-        C --> C2[Process 4]
-    end
+    C --> C1[Process 3: QC Metrics Calculation]
+    C --> C2[Process 4: Filtering]
 
-    subgraph Module3
-        D --> D1[Process 5]
-    end
+    D --> D1[Process 5: Data Analysis]
+    D --> D2[Process 6: Generate Report]
 
-    subgraph Results
-        B2 --> R1[Intermediate Output]
-        C2 --> R2[Final Output]
-        D1 --> R2
-    end
+    B2 --> C1
+    C2 --> D1
+
 
 
 ### The second challenge lies within the interdependency of various data analysis tools. The hidden effects of observable factors can be quantified to some extent by:
