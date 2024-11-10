@@ -40,7 +40,8 @@ flowchart TD
     B2 --> C1
     C2 --> D1
 ```
-A sample script is provided as scRNA.nf
+A sample script is provided as scRNA.nf.
+
 The second challenge lies within the interdependency of various data analysis tools. The hidden effects of observable factors can be quantified to some extent by:
 
 ## Structure Equation Modelling (SEM)
