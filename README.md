@@ -40,8 +40,8 @@ flowchart TD
     B2 --> C1
     C2 --> D1
 ```
-
-### The second challenge lies within the interdependency of various data analysis tools. The hidden effects of observable factors can be quantified to some extent by:
+A sample script is provided as scRNA.nf
+The second challenge lies within the interdependency of various data analysis tools. The hidden effects of observable factors can be quantified to some extent by:
 
 ## Structure Equation Modelling (SEM)
 Can bring forth the relationship between diverse outputs. Numerous observable variables (including gene expression levels, cell-type assignments, cluster identities, etc.) are present in scRNA-seq; however, these can frequently be impacted by biological processes that are not directly quantified, known as latent factors.
